@@ -7,7 +7,6 @@ html{
 	font-size: 36px;
 }
 body{
-    width: 100wh;
 	font: 0.38rem/1.42 'Open Sans', sans-serif;
 	color: #919191;
 }
@@ -24,7 +23,6 @@ ul{
 }
 p{
     font-size: 0.38rem;
-    padding: 0.7rem 0;
 }
 a{
 	text-decoration: none;
@@ -53,10 +51,8 @@ ul{
 	margin: 0 auto;
 }
 .col4{
-	width: 31.62%;
-/*    margin: 0 0 1rem ;*/
+    width: 31.62%;
 }
-
 
 
 
@@ -86,19 +82,33 @@ header{
 }
 /*header*/
 
-
-
-/*dishes*/
-.dishes{
+.flex{
     display: flex;
     justify-content: space-between;
-    flex-wrap: wrap;
-    padding-top: 2rem;
 }
-.name_dishes{
-    background: #f1f0f1;
-    font: 0.5rem 'Open Sans', sans-serif;
-    padding: 0.7rem;
+.color_h2{
+    font: 1rem/1.42rem 'Economica', sans-serif;
+    font-weight: bold;
+	color: #535151;
+    padding: 1rem 0 0.58rem 0;
+}
+.left_col{
+/*    outline: 1px solid black;*/
+    width: 64.70%;
+}
+.right_col{
+/*    outline: 1px solid black;*/
+    width: 33.504%;
+}
+.reservation_section{
+    display: flex;
+    justify-content: space-between;
+}
+span{
+    font-size: 0.5rem;
+}
+.text_p_bottom{
+    padding: 0.7rem 0;
 }
 .more{
 	display: flex;
@@ -114,12 +124,52 @@ header{
     color: #ffffff;
 	background: #919191;
 }
-/*dishes*/
+input{
+    width: 100%;
+    padding: 0.25rem;
+}
+.p_bold{
+    font-weight: bolder;
+    font-size: 0.44rem ;
+    padding-bottom: 0.49rem;
+    color: #535151;
+}
+.left_co1_2{
+    width: 48.87%;
+}
+.forms_pbtm{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-bottom: 0.361rem;
+}
+.row_form{
+    width: 75%;
+    font: inherit;
+}
+.form_button{
+    width: 75%;
+    padding-top: 0.361rem;
+    display: flex;
+    justify-content: space-between;
+}
+.text_field{
+    width: 100%;
+    height: 3.97rem;
+    padding: 0.2rem;
+    font: inherit;
+    box-sizing: border-box;
+}
+select{
+    margin-bottom: 0.361rem;
+}
+
+
 
 
 
 /*footer*/
-.row_calendar{
+.row_footer{
     display: flex;
     justify-content: space-between;
 }
@@ -149,14 +199,14 @@ footer{
 
 
 @media screen and (max-width:768px){
-    html{
-	    font-size: 32px;
-}
     .container{
 	width: 100%;
-	min-width: 13.33rem;
-	max-width: 21.33rem;;
+	min-width: 13,33rem;
+	max-width: 21,33rem;
 	margin: 0 auto;
+}
+    .left_co1_2{
+    width: 100%;
 }
     
     .flex_between{
@@ -172,80 +222,43 @@ footer{
     .logo{
         width: 35%;
     }
-    .col4{
-        width: 80%;
-    }
-    .padding_bottom{
-        padding-bottom: 1.5rem
-    }
+
     .dishes{
-        display: flex;
-        justify-content: space-between;
-        flex-direction: column;
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
         align-items: center;
-        padding-top: 2rem;
+    padding-top: 2rem;
 }
-    footer{
-        display: flex;
-        align-items: center;
-        width: 100%;
-        padding:  2rem 0.8rem;
-        margin-top: 1rem 0.5rem;
-        background: #adacac;
-    }
     
+  
     
-}
-
-
-
-@media screen and (max-width:530px){
-    html{
-	    font-size: 32px;
-}
-    /*header*/
-    .container{
-        width: 100%;
-        min-width: 1rem;
-        max-width: 16.56rem;
-        margin: 0 auto;
-    }
-    nav{
-        width: 60%;
-        padding-right: 0.5rem;
-    }
-    .logo{
-        width: 37%;
-    }
-    .col4{
-        width: 80%;
-    }
-    /*header*/
-    
-    
-    
-    
-        /*footer*/
-    footer{
-        display: flex;
-        align-items: center;
-        width: 100%;
-        padding:  1rem 0.4rem;
-        margin-top: 1rem;
-        background: #adacac;
-    }
-       .icons{
-        width: 75%;
-    }
-    .footer_info{
-        font-size: 0.23rem;
-    }
-    .big_fsz{
-        font-size: 0.38rem;
-    }
     /*footer*/
+.row_footer{
+    display: flex;
+    justify-content: space-between;
+}
+footer{
+    display: flex;
+    align-items: center;
+    width: 100%;
+    padding:  2rem 0.8rem;
+    margin-top: 1rem;
+    background: #adacac;
+}
+.footer_info{
+    color:  #e2e2e2;
+}
+.big_fsz{
+    font: 0.5rem Open Sans, sans-serif;
+    color: inherit;
+}
+.icons{
+    width: 1.38rem;
+}
+.flex{
+    display: flex;
+}
+/*footer*/
     
 }
-
-
-
